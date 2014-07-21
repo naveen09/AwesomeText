@@ -1,0 +1,8 @@
+<resources>
+
+    <declare-styleable name="AwesomeText">
+        <attr name="iconPosition" format="string" />
+        <attr name="faIcon" format="string" />
+    </declare-styleable>
+
+</resources>
