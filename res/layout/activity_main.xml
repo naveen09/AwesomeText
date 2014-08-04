@@ -1,19 +1,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.naveen09.awesometext"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
     <com.naveen09.awesometext.AwesomeText
+        android:id="@+id/awesomeText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/awesomeButton1"
+        android:layout_below="@+id/awesomeText1"
+        android:layout_marginTop="40dp"
+        android:text="@string/arrow_left"
+        app:faIcon="@string/fa_arrow_left"
+        app:iconPosition="right" />
+
+    <com.naveen09.awesometext.AwesomeText
         android:id="@+id/awesomeText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="98dp"
-        android:layout_marginTop="42dp"
-        android:text="AwesomeText"
-        app:faIcon="@string/fa_user" />
+        android:layout_alignRight="@+id/awesomeText2"
+        android:layout_marginTop="41dp"
+        android:text="@string/arrow_right" />
+
+    <com.naveen09.awesometext.AwesomeButton
+        android:id="@+id/awesomeButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/awesomeText2"
+        android:layout_marginRight="49dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/sign_out"
+        app:faIcon="@string/fa_sign_out"
+        app:iconPosition="left" />
+
+    <com.naveen09.awesometext.AwesomeButton
+        android:id="@+id/awesomeButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/awesomeButton2"
+        android:layout_alignBottom="@+id/awesomeButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:text="@string/sign_in" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <com.naveen09.awesometext.AwesomeText
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.naveen09.awesometext.AwesomeText
+            android:id="@+id/contactgit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </RelativeLayout>

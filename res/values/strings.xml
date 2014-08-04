@@ -3,6 +3,11 @@
 
     <string name="app_name">Awesome Text</string>
     <string name="action_settings">Settings</string>
+    <string name="arrow_right">Arrow Right</string>
+    <string name="arrow_left">Arrow Left</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+    
     <!-- fontawesome start -->
     <string name="fa_glass">&#xf000;</string>
     <string name="fa_music">&#xf001;</string>

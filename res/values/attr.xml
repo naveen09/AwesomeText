@@ -1,7 +1,10 @@
 <resources>
 
-    <declare-styleable name="AwesomeText">
-        <attr name="iconPosition" format="string" />
+    <declare-styleable name="AwesomeWidget">
+        <attr name="iconPosition" format="string">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
         <attr name="faIcon" format="string" />
     </declare-styleable>
 

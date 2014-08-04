@@ -3,7 +3,7 @@ package com.naveen09.awesometext;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.Button;
 
 import com.naveen09.awesometext.AwesomeWidgetUtils.POSITION;
 
@@ -12,10 +12,10 @@ import com.naveen09.awesometext.AwesomeWidgetUtils.POSITION;
  * @author naveen09 Naveen Aechan
  * 
  */
-public class AwesomeText
-    extends TextView
+public class AwesomeButton
+    extends Button
 {
-    final static String TAG = "AwesomeText";
+    final static String TAG = "AwesomeButton";
 
     private Context     mContext;
 
@@ -25,7 +25,7 @@ public class AwesomeText
      * @param attrs
      * @param defStyle
      */
-    public AwesomeText(Context context, AttributeSet attrs, int defStyle)
+    public AwesomeButton(Context context, AttributeSet attrs, int defStyle)
     {
         super(context, attrs, defStyle);
         mContext = context;
@@ -36,7 +36,7 @@ public class AwesomeText
      * @param context
      * @param attrs
      */
-    public AwesomeText(Context context, AttributeSet attrs)
+    public AwesomeButton(Context context, AttributeSet attrs)
     {
         super(context, attrs);
         mContext = context;
@@ -55,7 +55,7 @@ public class AwesomeText
      * 
      * @param context
      */
-    public AwesomeText(Context context)
+    public AwesomeButton(Context context)
     {
         super(context);
         mContext = context;
